@@ -62,14 +62,14 @@ spec:
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: data
-              mountPath: /data
+              mountPath: /data1
               subPath: minio
           terminationMessagePolicy: File
           image: >-
             quay.io/trustyai_testing/modelmesh-minio-examples:latest
           args:
             - server
-            - /data
+            - /data1
             - --console-address
             - :9090
       restartPolicy: Always
