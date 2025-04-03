@@ -16,3 +16,4 @@ resources:
   - routes.yaml
   - secret.yaml
   - service.yaml
+  - trustyai_service.yaml
