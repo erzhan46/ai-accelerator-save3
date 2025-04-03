@@ -13,10 +13,6 @@ spec:
       labels:
         app: minio
     spec:
-      volumes:
-        - name: data
-          persistentVolumeClaim:
-            claimName: minio
       containers:
         - resources:
             limits:
@@ -60,10 +56,6 @@ spec:
             - containerPort: 9090
               protocol: TCP
           imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - name: data
-              mountPath: /data1
-              subPath: minio
           terminationMessagePolicy: File
           image: >-
             quay.io/trustyai_testing/modelmesh-minio-examples:latest
