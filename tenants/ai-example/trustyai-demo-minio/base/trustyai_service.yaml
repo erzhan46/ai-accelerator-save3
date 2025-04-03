@@ -2,6 +2,7 @@ apiVersion: trustyai.opendatahub.io/v1alpha1
 kind: TrustyAIService
 metadata:
   name: trustyai-service
+  namespace: ai-example-trustyai-demo
 spec:
   # Optional values for replicas, image and tag. Below are the default values.
   # replicas: 1
