@@ -62,6 +62,8 @@ spec:
           args:
             - server
             - /data1
+            - '--console-address'
+            - ':9090'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
