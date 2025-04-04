@@ -19,3 +19,4 @@ resources:
   - trustyai_service.yaml
   - service_account.yaml
   - role_binding.yaml
+  - data-connection.yaml

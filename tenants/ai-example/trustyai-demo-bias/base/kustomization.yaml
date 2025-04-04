@@ -4,7 +4,6 @@ kind: Kustomization
 namespace: ai-example-trustyai-demo
 
 resources:
-  - data-connection.yaml
   - inference-service-alpha.yaml
   - inference-service-beta.yaml
   - serving-runtime.yaml
